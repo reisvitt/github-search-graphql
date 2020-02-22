@@ -1,0 +1,28 @@
+.container_explanation {
+  margin: 50px 30px 30px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pic_1 {
+  height: 300px;
+}
+
+.intern_container_explanation {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.span_text {
+  margin: 10px;
+}
+
+.pic_2 {
+
+  width: 70px;
+  margin: 20px;
+  align-self: center;
+  
+}

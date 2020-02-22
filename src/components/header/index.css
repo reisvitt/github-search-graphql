@@ -1,0 +1,23 @@
+.container_header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  align-self: flex-start;
+
+  margin: 30px;
+}
+
+.title {
+  margin-left: 1vh;
+  font-size: 6vh;
+  font-weight: bold;
+  align-self: center;
+}
+
+
+/* configuracoes da logo */
+.editImage {
+  min-height: 12vh;
+  max-height: 15vh;
+
+}

@@ -1,0 +1,17 @@
+.container_repo {
+  display: grid;
+  grid-template-columns: 300px 90px 90px 90px 150px;
+  grid-column-gap: 20px;
+
+  background-color: #e5e5e5;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+
+}
+
+.image_repo {
+  height: 15px;
+  margin: 2px;
+}
