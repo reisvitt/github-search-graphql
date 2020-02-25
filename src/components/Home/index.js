@@ -22,7 +22,8 @@ export default class index extends React.Component{
       client_id: process.env.CLIENT_ID,
       client_secret: process.env.CLIENT_SECRET,
       userData: [],
-      userRepos: []
+      userRepos: [],
+      errorMessage: ''
     }
   }
 
@@ -41,12 +42,12 @@ export default class index extends React.Component{
       .then((reposResponse => {
         const ordenados = this.sort(reposResponse)
         const onlyfour = ordenados.splice(0,4)
-        this.setState({userRepos: onlyfour})
+        this.setState({userRepos: onlyfour, errorMessage: ''})
       }))
       .catch(err => {
-        this.setState({userRepos: []})
+        this.setState({userRepos: [], errorMessage: err.response.data.message})
         console.log(err)
-      });
+      })
 
       /*axios.post(`${this.state.baseUrl}${username}`,
         this.params = {
@@ -80,6 +81,13 @@ export default class index extends React.Component{
     return sortedData
   }
 
+  isEnter = (e) => {
+    if(e.keyCode === 13){
+      this.search()
+    }
+
+  }
+
   search = () => {
     this.getProfile(this.state.userName)
   }
@@ -89,7 +97,7 @@ export default class index extends React.Component{
     
     // se nao tiver nenhuma letra na pesquisa, fecha-se o profile
     if(e.target.value === ''){
-      this.setState({userData: []})
+      this.setState({userData: [], errorMessage: ''})
     }
   }
 
@@ -99,7 +107,7 @@ export default class index extends React.Component{
     return (
       <div className="Home">
         <Header />
-        <Form userName={this.getUserName} handleClick={this.search} />
+        <Form userName={this.getUserName} handleClick={this.search} keyPressed={this.isEnter} errorMessage={this.state.errorMessage} />
         {userData.length !== 0 ? 
         
           ( <div className="data"> 
