@@ -1,9 +1,13 @@
-import axios from 'axios'
+import axios from "axios";
+import https from "https";
 
-const baseUrl = 'https://api.github.com/users'
+const baseUrl = "https://api.github.com/users";
 
 const api = axios.create({
-  baseURL: baseUrl
-})
+  baseURL: baseUrl,
+  httpAgent: new https.Agent({
+    rejectUnauthorized: false,
+  }),
+});
 
-export default api
+export default api;
