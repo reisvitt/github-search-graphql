@@ -2,7 +2,7 @@
   "name": "github_search",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://reisvitt.github.io/github-search",
+  "homepage": "http://reisvitt.github.io/github-search",
   "dependencies": {
     "@material-ui/core": "^4.9.3",
     "@testing-library/jest-dom": "^4.2.4",
@@ -12,7 +12,8 @@
     "gh-pages": "^2.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "^2.1.8"
+    "react-scripts": "^2.1.8",
+    "reactstrap": "^8.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

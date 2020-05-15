@@ -3,14 +3,17 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 1200px;
 }
 
 .pic_1 {
-  height: 300px;
+  height: 30vh;
+  max-height: 300px;
 }
 
 .intern_container_explanation {
-  width: 50vw;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
 }
@@ -20,9 +23,20 @@
 }
 
 .pic_2 {
-
   width: 70px;
   margin: 20px;
   align-self: center;
-  
+}
+
+@media (max-width: 576px) {
+  .container_explanation {
+    flex-direction: column;
+  }
+  .intern_container_explanation {
+    flex-direction: row;
+  }
+  .pic_1 {
+    margin-top: 20px;
+    order: 3;
+  }
 }
