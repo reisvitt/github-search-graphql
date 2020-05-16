@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container } from "reactstrap";
 import { TextField, Button } from "@material-ui/core";
 
 import "./index.css";
