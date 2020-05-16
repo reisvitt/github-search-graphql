@@ -1,0 +1,18 @@
+{
+  "main.css": "/github-search-graphql/static/css/main.e1ed2423.chunk.css",
+  "main.js": "/github-search-graphql/static/js/main.49917735.chunk.js",
+  "main.js.map": "/github-search-graphql/static/js/main.49917735.chunk.js.map",
+  "runtime~main.js": "/github-search-graphql/static/js/runtime~main.081e8c62.js",
+  "runtime~main.js.map": "/github-search-graphql/static/js/runtime~main.081e8c62.js.map",
+  "static/js/2.90cf19e9.chunk.js": "/github-search-graphql/static/js/2.90cf19e9.chunk.js",
+  "static/js/2.90cf19e9.chunk.js.map": "/github-search-graphql/static/js/2.90cf19e9.chunk.js.map",
+  "index.html": "/github-search-graphql/index.html",
+  "precache-manifest.dd5ed9f7c01dc997e73e869df42af39e.js": "/github-search-graphql/precache-manifest.dd5ed9f7c01dc997e73e869df42af39e.js",
+  "service-worker.js": "/github-search-graphql/service-worker.js",
+  "static/css/main.e1ed2423.chunk.css.map": "/github-search-graphql/static/css/main.e1ed2423.chunk.css.map",
+  "static/media/code.png": "/github-search-graphql/static/media/code.a77b250f.png",
+  "static/media/fork_icon.png": "/github-search-graphql/static/media/fork_icon.24f36bf6.png",
+  "static/media/github-graphql.png": "/github-search-graphql/static/media/github-graphql.a53077a0.png",
+  "static/media/github_logo_icon.png": "/github-search-graphql/static/media/github_logo_icon.84134458.png",
+  "static/media/star_icon.png": "/github-search-graphql/static/media/star_icon.04c99d7f.png"
+}
