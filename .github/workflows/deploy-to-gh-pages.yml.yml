@@ -12,9 +12,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v2
-      with:
-          persist-credentials: false
+      uses: actions/checkout@v1
 
     - name: Build
       run: |
@@ -22,14 +20,10 @@ jobs:
         npm run-script build
       env:
         REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
-        
-    - name: Install rsync 📚
-      run: |
-        sudo apt-get update && sudo apt-get upgrade && sudo apt-get install rsync
     
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-          REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: dist
+          FOLDER: build
