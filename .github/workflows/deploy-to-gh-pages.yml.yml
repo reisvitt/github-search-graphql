@@ -17,8 +17,9 @@ jobs:
           npm install
           npm run-script build
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.5.1
+
         with:
           REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
           BRANCH: gh-pages
