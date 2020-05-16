@@ -12,7 +12,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
 
     - name: Build
       env:
@@ -23,7 +23,7 @@ jobs:
       
     
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v2
+      uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
           GITHUB_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
           BRANCH: gh-pages
