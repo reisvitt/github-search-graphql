@@ -21,7 +21,7 @@ jobs:
         npm run-script build
     
     - name: Deploy
-      uses: reisvitt/github-search-graphql
+      uses: Reisvitt/github-search-graphql@releases/v1
       with:
           GITHUB_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
           BRANCH: gh-pages
