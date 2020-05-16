@@ -27,5 +27,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
           REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
-          BRANCH: gh-pages
+          BRANCH: master
           FOLDER: build
