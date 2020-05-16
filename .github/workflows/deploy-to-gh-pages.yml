@@ -20,9 +20,7 @@ jobs:
     - name: Build page
       env:
         REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
-      run: |
-        REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
-        npm run build
+      run: npm run build
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       env:
