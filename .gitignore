@@ -27,3 +27,5 @@ Vitor.png
 /teste
 
 .gitignore
+package-lock.json
+yarn.lock
